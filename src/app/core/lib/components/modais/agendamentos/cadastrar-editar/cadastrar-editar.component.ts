@@ -159,7 +159,7 @@ export class CadastrarEditarComponent {
         },
         {
           nome: "Recusado",
-          valor: "recusado"
+          valor: "cancelado"
         }
       ]
     }

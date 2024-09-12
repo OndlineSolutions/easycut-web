@@ -50,18 +50,21 @@
             </ng-container>
 
             <ng-container matColumnDef="status" stickyEnd>
-                <th mat-header-cell *matHeaderCellDef>Status</th>
+                <th mat-header-cell *matHeaderCellDef>Status</th>   
                 <td class="tdsticky" [class]="
                         agendamento.status === 'pendente'
                             ? 'pendente'
                             : agendamento.status === 'aceito'
                             ? 'aceito'
-                            : 'recusado' " mat-cell *matCellDef="let agendamento">
+                            : agendamento.status === 'concluido'
+                            ? 'concluido'
+                            : 'cancelado' " mat-cell *matCellDef="let agendamento">
                     <mat-form-field appearance="standard">
                         <mat-select [value]="agendamento.status" (selectionChange)="abrirModalEditarStatus($event?.value, agendamento)">
                             <mat-option value="pendente">Pendente</mat-option>
                             <mat-option value="aceito">Aceito</mat-option>
-                            <mat-option value="recusado">Recusado</mat-option>
+                            <mat-option value="cancelado">Cancelado</mat-option>
+                            <mat-option value="concluido">Concluído</mat-option>
                         </mat-select>
                     </mat-form-field>
                 </td>

@@ -15,7 +15,7 @@ table {
 }
 
 .aceito {
-  background: rgb(74, 197, 74);
+  background: rgb(17, 130, 235);
   width: 5.3rem;
   display: flex;
   margin-left: 10px;
@@ -24,7 +24,7 @@ table {
   border-radius: 8px;
 }
 
-.recusado {
+.cancelado {
   background: rgb(255, 103, 103);
   width: 5.3rem;
   display: flex;
@@ -32,6 +32,17 @@ table {
   margin-top: 3px;
   margin-bottom: 2px;
   border-radius: 8px;
+}
+
+.concluido {
+  background: rgb(74, 197, 74);
+  width: 5.3rem;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  border: 1px solid #0000;
 }
 
 th {
@@ -48,11 +59,15 @@ th {
   width: 5.3rem;
 }
 
-.recusado .mat-form-field-flex {
-  width: 5.3rem;
+.cancelado .mat-form-field-flex {
+  width: 5.6rem;
 }
 
 .pendente .mat-form-field-flex {
+  width: 5.3rem;
+}
+
+.concluido .mat-form-field-flex {
   width: 5.3rem;
 }
 

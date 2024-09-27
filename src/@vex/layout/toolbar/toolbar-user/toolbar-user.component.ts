@@ -16,6 +16,7 @@ export class ToolbarUserComponent {
     dropdownOpen: boolean;
     icPerson = icPerson;
     nomeUsuario: string = window.localStorage.getItem('estabelecimento');
+    fotoEstabelecimento = window.localStorage.getItem('fotoS3Aws')
 
     constructor(
         private popover: PopoverService,
